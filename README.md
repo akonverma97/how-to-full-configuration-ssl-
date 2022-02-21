@@ -347,7 +347,7 @@ Save and close the file when you are finished.
 
 To create a symlink at current directory https.conf
 ```
-	 ln -s /etc/apache2/sites-enable https.conf /etc/apache2/sites-enable/https.conf 
+	 ln -s /etc/apache2/sites-enable default-ssl.conf /etc/apache2/sites-enable/default-ssl.conf
 ```
 
 ```
@@ -391,7 +391,7 @@ We can see the available profiles by typing:
 
                     
 ```                 		
-sudo ufw app list”
+sudo ufw app list
 ```
 You should see a list like this:   
 
@@ -432,7 +432,7 @@ sudo ufw enable
 then 
  		                             
 ```
-sudo ufw status”
+sudo ufw status
 ```
 
 ```
