@@ -59,7 +59,6 @@ sudo apt-get -y install apache2
 sudo apt-get -y install  php libapache2-mod-php php-mysql php-curl php-gd php-json php-zip php-mbstring
 sudo service apache2 restart
 sudo apt-get -y install mysql-server
-sudo mysql_secure_installation
 sudo systemctl restart apache2 
 ```
 complet lamp server install your ec2 instance
