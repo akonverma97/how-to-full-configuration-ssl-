@@ -91,7 +91,7 @@ just type your domain in url
 Example
 
 ```
-dev.bitcotapps.com
+example.com
 ```
 
 # Now we are install SSL certificate
