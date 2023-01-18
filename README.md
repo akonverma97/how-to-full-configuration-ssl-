@@ -508,7 +508,7 @@ sudo systemctl restart apache2
 Testing Encryption
 
 ```
-https://dev.bitcotapps.com
+https://dev.test.com
 ```
 
 Conclusion
