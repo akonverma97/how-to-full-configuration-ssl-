@@ -318,7 +318,7 @@ After making these changes, your server block should look similar to this:
 <IfModule mod_ssl.c>
         <VirtualHost _default_:443>
 ServerAdmin your_email@example.com
-ServerName dev.bitcot.com
+ServerName dev.test.com
 
 DocumentRoot /var/www/html
 
@@ -353,7 +353,7 @@ To create a symlink at current directory https.conf
 <IfModule mod_ssl.c>
 <VirtualHost *:443>
 ServerAdmin webmaster@localhost
-ServerName  dev.bitcotapps.com
+ServerName  dev.test.com
 DocumentRoot /var/www/html
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
