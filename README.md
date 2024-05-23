@@ -112,7 +112,7 @@ sudo nano /etc/apache2/sites-available/your_domain.conf
 
 Find the existing ServerName and ServerAlias lines:
 
-```sh
+```sh      
 ...
 ServerName your_domain;
 SeverAlias www.your_domain
@@ -137,7 +137,7 @@ sudo ufw status
 
 If you followed one of our Apache installation guide, your output will generate the following, this means that only HTTP traffic on port 80 is allowed:
 
-```sh
+```sh      
 Output
 Status: active
 
@@ -185,7 +185,7 @@ sudo certbot --apache
 
 This command will generate a prompt with a series of questions to configure your SSL certificate. First, you’ll be asked to provide a valid email address, this is for the purposes of renewal notifications and security notices:
 
-```sh
+```sh      
 Output
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 Plugins selected: Authenticator apache, Installer apache
@@ -195,7 +195,7 @@ cancel): you@your_domain
 
 After you’ve provided a valid email address, press ENTER and proceed to the next step. You’ll be asked to confirm if you agree to Let’s Encrypt terms of service. Confirm by pressing A and ENTER:
 
-```sh
+```sh        
 Output
 Please read the Terms of Service at
 https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf. You must
@@ -219,7 +219,7 @@ encrypting the web, EFF news, campaigns, and ways to support digital freedom.
 
 then click to enter
 
-```sh
+```sh    
 Output
 Which names would you like to activate HTTPS for?
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -486,6 +486,10 @@ Next, we can enable our SSL Virtual Host with the a2ensite command:
 
 ```
 sudo a2ensite default-ssl
+```
+
+```
+sudo a2enmod rewrite
 ```
 
 ```
